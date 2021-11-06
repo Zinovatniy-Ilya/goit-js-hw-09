@@ -5,4 +5,4 @@ var t,o=arguments[3];!function(o,i){"function"==typeof t&&t.amd?t([],function(){
 },{}],"GyVV":[function(require,module,exports) {
 "use strict";var e=require("notiflix/build/notiflix-notify-aio");const t=document.querySelector(".form");function i(e){e.preventDefault();let{delay:t,step:i,amount:r}=e.currentTarget;t=Number(t.value),i=Number(i.value);for(let s=1;s<=r.value;s++)n(s,t).then(u).catch(o),t+=i}function n(e,t){return new Promise((i,n)=>{const u=Math.random()>.3;setTimeout(()=>{u&&i(`✅ Fulfilled promise ${e} in ${t}ms`),n(`❌ Rejected promise ${e} in ${t}ms`)},t)})}function u(t){e.Notify.success(t)}function o(t){e.Notify.failure(t)}t.addEventListener("submit",i);
 },{"notiflix/build/notiflix-notify-aio":"MeeU"}]},{},["GyVV"], null)
-//# sourceMappingURL=/parcel-project-template/03-promises.1d5627dc.js.map
+//# sourceMappingURL=/goit-js-hw-09/03-promises.1d5627dc.js.map

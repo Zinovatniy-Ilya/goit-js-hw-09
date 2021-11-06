@@ -5,4 +5,4 @@ var t,o=arguments[3];!function(o,i){"function"==typeof t&&t.amd?t([],function(){
 },{}],"TCaP":[function(require,module,exports) {
 "use strict";var t=require("notiflix/build/notiflix-notify-aio");const o=document.body,e=document.querySelector("button[data-start]"),n=document.querySelector("button[data-stop]");function r(){const o=`#${Math.floor(16777215*Math.random()).toString(16)}`;return t.Notify.success(`Color ${o}`),o}e.addEventListener("click",l),n.addEventListener("click",i);let c=0;function l(){e.disabled=!0,c=setInterval(()=>o.style.backgroundColor=r(),1e3),console.log("start")}function i(){e.disabled=!1,console.log("stop"),clearInterval(c)}
 },{"notiflix/build/notiflix-notify-aio":"MeeU"}]},{},["TCaP"], null)
-//# sourceMappingURL=/parcel-project-template/01-color-switcher.c3d49ad2.js.map
+//# sourceMappingURL=/goit-js-hw-09/01-color-switcher.c3d49ad2.js.map
